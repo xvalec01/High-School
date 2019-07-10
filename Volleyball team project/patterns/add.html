@@ -1,0 +1,229 @@
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/jquery-1.11.2.js"></script>
+        <script src="js/vendor/npm.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./show.html">Zobrazit</a>
+          <a class="navbar-brand" href="./add.html">Vložit</a>
+          <a class="navbar-brand" href="./edit.html">Editovat</a>
+          <a class="navbar-brand" href="./remove.html">Mazat</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <ul class="nav nav-pills">
+            <li class="active"><a class="navplayers">Hráči</a></li>
+            <li class="active"><a class="navstaff">Zaměstnanci</a></li>
+            <li class="active"><a class="navteams">Týmy</a></li>
+        </ul>
+      </div>    
+    </div>
+
+    <div class="container add">
+    <div class="players hide">   
+      <form role="form">
+        <div class="form-group">
+          <h2>Hráči</h2>
+          <br>
+          <div class="table-responsive">
+           <div style="overflow-x:auto;">
+           <table class="table">
+               <tr>
+                  <th> <label for="plrName">Křestní jméno: </label></th>
+                  <td> <input type="text" class="form-control" id="plrName"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrSurname">Příjmení: </label></th>
+                   <td><input type="text" class="form-control" id="plrSurname"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrEmail">E-Mail: </label></th>
+                   <td><input type="email" class="form-control" id="plrEmail"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrTel">Telefonní číslo: </label></th>
+                   <td><input type="tel" class="form-control" id="plrTel"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrStreet">Ulice: </label></th>
+                   <td><input type="text" class="form-control" id="plrStreet"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrHouseNum">Číslo popisné: </label></th>
+                   <td><input type="number" class="form-control" id="plrHouseNum"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrCity">Město: </label></th>
+                   <td><input type="text" class="form-control" id="plrCity"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrDate">Datum narození: </label></th>
+                   <td><input type="date" class="form-control" id="plrDate"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrSizeShoes">Velikost bot: </label></th>
+                   <td><input type="number" class="form-control" id="plrSizeShoes"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrSizeDress">Velikost oblečení: </label></th>
+                   <td class=""><select class="form-control" id="plrSizeDress">
+                        <option>xs</option>
+                        <option>s</option>
+                        <option>m</option>
+                        <option>l</option>
+                        <option>xl</option>
+                        <option>xxl</option>
+                   </select></td>
+               </tr>
+           </table>
+           </div>
+           <button type="submit" >Uložit</button>   
+          </div>
+        </div>    
+      </form>
+     </div>   
+     <div class="staff hide">   
+      <form role="form">
+        <div class="form-group">
+          <h2>Zaměstnanci</h2>
+          <br>
+          <div class="table-responsive">
+           <div style="overflow-x:auto;">
+           <table class="table">
+               <tr>
+                  <th> <label for="plrName">Křestní jméno: </label></th>
+                  <td> <input type="text" class="form-control" id="plrName"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrSurname">Příjmení: </label></th>
+                   <td><input type="text" class="form-control" id="plrSurname"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrEmail">E-Mail: </label></th>
+                   <td><input type="email" class="form-control" id="plrEmail"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrTel">Telefonní číslo: </label></th>
+                   <td><input type="tel" class="form-control" id="plrTel"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrStreet">Ulice: </label></th>
+                   <td><input type="text" class="form-control" id="plrStreet"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrHouseNum">Číslo popisné: </label></th>
+                   <td><input type="number" class="form-control" id="plrHouseNum"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrCity">Město: </label></th>
+                   <td><input type="text" class="form-control" id="plrCity"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrDate">PSC: </label></th>
+                   <td><input type="date" class="form-control" id="plrDate"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrSizeShoes">Licence: </label></th>
+                   <td><input type="number" class="form-control" id="plrSizeShoes"></td>
+               </tr>
+           </table>
+           </div>
+           <button type="submit" >Uložit</button>   
+          </div>
+        </div>    
+      </form>
+    </div>
+    <div class="teams hide">
+      <form role="form">
+        <div class="form-group">
+          <h2>Týmy</h2>
+          <br>
+          <div class="table-responsive">
+           <div style="overflow-x:auto;">
+           <table class="table">
+               <tr>
+                  <th> <label for="plrName">Název: </label></th>
+                  <td> <input type="text" class="form-control" id="plrName"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrSurname">Liga: </label></th>
+                   <td><input type="text" class="form-control" id="plrSurname"></td>
+               </tr>
+               <tr>
+                   <th><label for="plrEmail">Kategorie: </label></th>
+                   <td><input type="email" class="form-control" id="plrEmail"></td>
+               </tr>
+           </table>
+           </div>
+           <button type="submit" >Uložit</button>   
+          </div>
+        </div>    
+      </form>
+     </div>   
+        
+      <hr>
+
+      <footer>
+        <p>&copy; Tomáš Ryšavý, David Valecký - SŠTE Brno - 2015</p>
+      </footer>
+    </div> <!-- /container -->        
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+
+    </body>
+</html>

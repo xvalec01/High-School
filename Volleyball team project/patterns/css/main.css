@@ -1,0 +1,43 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+table {
+    border:solid 2px;
+    text-align: center;
+}
+
+.table{
+   table-layout: fixed; 
+    
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+    
+}
+
+td {
+    border:solid 1px;
+    margin:1px;
+}
+
+.yellow {
+    background-color:#fefb53;
+}
+.red {
+    background-color:lightcoral;    
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.permred {
+    background-color:#fe5332;
+}
+
+.hide {
+    display:none;
+}
+

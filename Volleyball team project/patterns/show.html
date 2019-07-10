@@ -1,0 +1,184 @@
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/jquery-1.11.2.js"></script>
+        <script src="js/vendor/npm.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/show.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./show.html">Zobrazit</a>
+          <a class="navbar-brand" href="./add.html">Vložit</a>
+          <a class="navbar-brand" href="./edit.html">Editovat</a>
+          <a class="navbar-brand" href="./remove.html">Mazat</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+         <ul class="nav nav-pills">
+            <li class="active"><a class="navplayers">Hráči</a></li>
+            <li class="active"><a class="navstaff">Zaměstnanci</a></li>
+            <li class="active"><a class="navteams">Týmy</a></li>
+         </ul>
+         <br>
+         <div class="panel-group players hide">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                   <h4 class="panel-title">
+                   <a data-toggle="collapse" href="#collapse1">Filtry</a>
+                   </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <br>
+                        <input type="checkbox" name="name" checked> jméno   
+                        <input type="checkbox" name="surname" checked> přijmení   
+                        <input type="checkbox" name="email" checked> email   
+                        <input type="checkbox" name="phone" checked> telefon   
+                        <input type="checkbox" name="date" checked> datum narození    
+                        <input type="checkbox" name="street"> ulice    
+                        <input type="checkbox" name="housenum"> č. p.    
+                        <input type="checkbox" name="city"> město   
+                        <input type="checkbox" name="psc"> PSČ    
+                        <input type="checkbox" name="sizeshoes"> velikost bot     
+                        <input type="checkbox" name="sizedress"> velikost dresu 
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="panel-group staff hide">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                   <h4 class="panel-title">
+                   <a data-toggle="collapse" href="#collapse2">Filtry</a>
+                   </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">  
+                        <br>
+                        <input type="checkbox" name="name" checked> jméno   
+                        <input type="checkbox" name="surname" checked> přijmení   
+                        <input type="checkbox" name="email" checked> email   
+                        <input type="checkbox" name="telephone" checked> telefon   
+                        <input type="checkbox" name="licence" checked> licence    
+                        <input type="checkbox" name="street"> ulice    
+                        <input type="checkbox" name="housenum"> č. p.    
+                        <input type="checkbox" name="city"> město   
+                        <input type="checkbox" name="psc"> PSČ   
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="panel-group teams hide">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                   <h4 class="panel-title">
+                   <a data-toggle="collapse" href="#collapse3">Filtry</a>
+                   </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">  
+                        <br>
+                        <input type="checkbox" name="name" checked> Název   
+                        <input type="checkbox" name="league" checked> Liga   
+                        <input type="checkbox" name="category" checked> Kategorie  
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="teams hide">
+          <h2>Týmy</h2>
+          <table class="table">
+              <tr><th>Název</th><th>Liga</th><th>Kategorie</th></tr>
+              <tr class="1"><td><a href="./profile_teams.html">Opice</a></td><td>1</td><td>A</td></tr>
+              <tr class="2"><td>Přípravka</td><td>4</td><td>B</td></tr>
+              <tr class="3"><td>Zelenáči</td><td>2</td><td>A</td></tr>
+          </table>
+      </div>
+      <div class="players hide">
+          <h2>Hráči</h2>
+          <table class="table table-condensed">
+              <tr><th>Jméno</th> <th>Přijmení</th><th>Email</th><th>Telefon</th><th>Datum narození</th></tr>
+              <tr><td><a href="./profile_players.html">Kryštof</a></td><td><a href="./profile_players.html">Potůček</a></td><td>kryspin@gmail.com</td><td>849 849 930</td><td>11. 11. 1997</td></tr>
+              <tr><td>Olga</td><td>Hartlová</td><td>olinetsqa@hotmail.com</td><td>747 827 344</td><td>3. 11. 1992</td></tr>
+              <tr><td>Ignác</td><td>Utrhlístek</td><td>Ignacek@gmail.com</td><td>748 823 834</td><td>3. 6. 1999</td></tr>
+          </table>
+      </div>
+      <div class="staff hide">
+          <h2>Zaměstnanci</h2>
+          <table class="table table-condensed">
+              <tr><th>Jméno</th> <th>Přijmení</th><th>Email</th><th>Telefon</th><th>licence</th></tr>
+              <tr><td><a href="./profile_staff.html">Jan</a></td><td><a href="./profile_staff.html">Novák</a></td><td>jan.novak@gmail.com</td><td>748 374 738</td><td>a</td></tr>
+              <tr><td>Martin</td><td>Dvořák</td><td>m.d@gmail.com</td><td>738 834 834</td><td>a, b</td></tr>
+              <tr><td>Dvořák</td><td>Oněgin</td><td>EvzaOnegin@centrum.cz</td><td>847 847 384</td><td>c</td></tr>
+          </table>
+      </div>
+      
+      <hr>
+
+      <footer>
+        <p>&copy; Tomáš Ryšavý, David Valecký - SŠTE Brno - 2015</p>
+      </footer>
+    </div> <!-- /container -->        
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/show.js"></script>
+
+
+    </body>
+</html>
