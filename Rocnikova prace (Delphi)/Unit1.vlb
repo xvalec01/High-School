@@ -1,0 +1,16 @@
+﻿[Timer1]
+Coordinates=15,77,55,36
+
+[Timer2]
+Coordinates=139,173,55,36
+
+[úvodní]
+Coordinates=65,78,52,58
+Visible=True
+
+[Play]
+Coordinates=10,78,45,58
+
+[]
+Coordinates=69,10,67,58
+
